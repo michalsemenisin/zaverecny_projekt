@@ -10,3 +10,4 @@ Až se zprovozní základní ovládání, tak bych se vrhl na "learning mode"
 3. KONZULTACE - ZATÍM NE
 4. ZÁKLADNÍ POHYB - ZATÍM NE
 5. LEARNING MODE - ZATÍM NE
+6. VYHÝBÁNÍ OBJEKTŮ (SENZOR) - NE
