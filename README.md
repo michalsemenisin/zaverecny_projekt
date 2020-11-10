@@ -7,7 +7,6 @@ Až se zprovozní základní ovládání, tak bych se vrhl na "learning mode"
 -----------------------------------------------------------------
 1. NAKOUPENÍ SOUČÁSTEK - HOTOVO 
 2. POSTAVENÍ KONSTRUKCE - HOTOVO
-3. KONZULTACE - ZATÍM NE
-4. ZÁKLADNÍ POHYB - ZATÍM NE
-5. LEARNING MODE - ZATÍM NE
-6. VYHÝBÁNÍ OBJEKTŮ (SENZOR) - NE
+3. ZÁKLADNÍ POHYB - ZATÍM NE
+4. LEARNING MODE - ZATÍM NE
+5. VYHÝBÁNÍ OBJEKTŮ (SENZOR) - NE
