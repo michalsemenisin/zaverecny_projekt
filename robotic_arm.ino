@@ -101,7 +101,7 @@ void loop() {
     oldWrist1Val = 0;                           // Reset stupnu "wrist1" 
     oldWrist2Val = 90;                          // Reset stupnu "wrist2" 
     delay(50);                                  // Cas aby se serva vratily do klidove polohy
-  }//end if
+  }
 
   //Nahodny pohyb
   if (dataCode == 4 ) {
@@ -121,4 +121,4 @@ void loop() {
   dataCode = 999;        // Reset konvertovaneho "code" integeru
   dataValue = 999;       // Reset konvertovaneho "value" integeru
 
-} //end loop
+} 
