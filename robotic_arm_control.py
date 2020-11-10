@@ -22,7 +22,6 @@ def callback(value,code):                       # Value predava hodnotu '5,10,15
     global holdsum2                             # Uklada pocet stupnu aby nepresahl 0<x<180 pro pohyb nahoru a dolu
     global Degrees                              # Uklada aktualni prepinacovy vyber stupnu
 
-
     if((code == 1) or (code == -1)):                # Kontrola zda code je vlevo ci vpravo
         holdsum=holdsum+(code*Degrees)              # Uklada bezici počet levých/pravých stupnu. Vynasobenim (1) -  kladna cisla nebo (-1) zaporna cisla
         if(holdsum < 0):                            # Aby nedoslo k tomu ze stupne pujdou pod 0 stupnu - serva nemohou pod 0 stupnu
@@ -34,7 +33,6 @@ def callback(value,code):                       # Value predava hodnotu '5,10,15
         textBox3.delete('1.0', tk.END)              # Vymazani textoveho pole
         textBox3.insert(tk.INSERT,holdsum)          # Zobrazeni novych stupnu
         
-        print('Send L/R code to Ardunio...')
         ArduinoSerial.write(str(Degrees).encode())  # Odeslani prvnich cisel s poctem stupnu do Arduina
         ArduinoSerial.write(','.encode())           # Odeslani oddelovaci carky pro signalizaci prvniho ze 2 cisel odeslanych do arduina
         ArduinoSerial.write(str(code).encode())     # Odeslani 'code' - pro nahoru/dolu, doleva/doprava, ......
@@ -51,14 +49,12 @@ def callback(value,code):                       # Value predava hodnotu '5,10,15
         textBox5.delete('1.0', tk.END)              # Vymazani textoveho pole
         textBox5.insert(tk.INSERT,holdsum2)         # Zobrazeni novych stupnu
 
-        print('Send Up/Down code to Arduino...')
         ArduinoSerial.write(str(Degrees).encode())  # Odeslani prvnich cisel s poctem stupnu do Arduina
         ArduinoSerial.write(','.encode())           # Odeslani oddelovaci carky pro signalizaci prvniho ze 2 cisel odeslanych do arduina
         ArduinoSerial.write(str(code).encode())     # Odeslani 'code' - pro nahoru/dolu, doleva/doprava, ......
         ArduinoSerial.write(','.encode())           # Odeslani oddelovaci carky pro signalizaci prvniho ze 2 cisel odeslanych do arduina
 
     if(code == 3):
-        print('Send Reset code to Arduino...')
         ArduinoSerial.write(str(Degrees).encode())  # Odeslani prvnich cisel s poctem stupnu do Arduina
         ArduinoSerial.write(','.encode())           # Odeslani oddelovaci carky pro signalizaci prvniho ze 2 cisel odeslanych do arduina
         ArduinoSerial.write(str(code).encode())     # Odeslani 'code' - pro nahoru/dolu, doleva/doprava, ......
@@ -82,7 +78,6 @@ def callback(value,code):                       # Value predava hodnotu '5,10,15
                                                       
 
     if(code == 4):
-        print('Send Random move code to Arduino...')
         textBox7.delete('1.0', tk.END)                              # Vymazani textoveho pole
         textBox7.insert(tk.INSERT,'ON')                             # Had to leave 'ON' could not set from 'ON' to 'OFF'; only 'OFF' shows up.
         textBox7.update()                                           # Zapsani do textoveho pole
@@ -122,9 +117,9 @@ Degrees=0                                                           # Nastavit p
 root.title("Ovladani ramena")             
 
 #################### tlacitka ##################
-labelMove1 = Label(root, background="Powder Blue",  font = ('Arial' , 10),text="ARM RIGHT-LEFT")   # Text nad textovym polem
+labelMove1 = Label(root, background="#EFFEAC",  font = ('Arial' , 10),text="ARM RIGHT-LEFT")   # Text nad textovym polem
 labelMove1.place(x=70,y=0)                                                                         
-labelMove2 = Label(root, background="Powder Blue",  font = ('Arial' , 10),text="ARM UP-DOWN")      # Text nad textovym polem 
+labelMove2 = Label(root, background="#EFFEAC",  font = ('Arial' , 10),text="ARM UP-DOWN")      # Text nad textovym polem 
 labelMove2.place(x=280,y=0)                                                                        
 
 MoveLeftButton = Button(root, bd=3,text="Arm Left")                         # Tlacitko pro pohyb doleva
@@ -153,7 +148,7 @@ textBox2.place(x=320,y=22)
 textBox2.insert(tk.INSERT,0)                                                # Docasna hodnota do textoveho pole
 
 #################################################################
-labelMode = tk.Label(root,background="Powder Blue", font = ('Arial' , 10),text="MODE")  # MODE text
+labelMode = tk.Label(root,background="#EFFEAC", font = ('Arial' , 10),text="MODE")  # MODE text
 labelMode.place(x=205,y=109)                                                           
 
 ArmResetButton = Button(root, bd=3,text="Reset Arm")                        # Tlacitko Reset Arm
@@ -169,46 +164,46 @@ textBox7.place(x=210,y=130)
 textBox7.insert(tk.INSERT,'OFF')                                            # Docasna hodnota OFF
 
 #################################################################
-labelRadioButton = tk.Label(root,background="Powder Blue", font = ('Arial' , 10),text="DEGREE\nSELECTION")          # Text Degree Selection
+labelRadioButton = tk.Label(root,background="#EFFEAC", font = ('Arial' , 10),text="DEGREE\nSELECTION")          # Text Degree Selection
 labelRadioButton.place(x=300,y=165)                                                                                
 
-radioButton1 = Radiobutton(root,background="Powder Blue",variable=radioButtonVar,value=5,text=" 5 deg")             # Nastavi hodnotu tlacitka na 5 stupnu
+radioButton1 = Radiobutton(root,background="#EFFEAC",variable=radioButtonVar,value=5,text=" 5 deg")             # Nastavi hodnotu tlacitka na 5 stupnu
 radioButton1.bind('<Button-1>',lambda event,arg=1:callback(5,0))                                                    # Tato lambda funkce umožnuje levym tlačítkem na myši aktivovat funkci
 radioButton1.place(x=301,y=200)                                                                                    
 
-radioButton2 = Radiobutton(root,background="Powder Blue",variable=radioButtonVar,padx=10,value=10,text="10 deg")    # Nastavi hodnotu tlacitka na 10 stupnu
+radioButton2 = Radiobutton(root,background="#EFFEAC",variable=radioButtonVar,padx=10,value=10,text="10 deg")    # Nastavi hodnotu tlacitka na 10 stupnu
 radioButton2.bind('<Button-1>',lambda event,arg=1:callback(10,0))                                                   # Tato lambda funkce umožnuje levym tlačítkem na myši aktivovat funkci
 radioButton2.place(x=292,y=225)                                                                                    
 
-radioButton3 = Radiobutton(root,background="Powder Blue",variable=radioButtonVar,padx=10,value=15,text="15 deg")    # Nastavi hodnotu tlacitka na 15 stupnu
+radioButton3 = Radiobutton(root,background="#EFFEAC",variable=radioButtonVar,padx=10,value=15,text="15 deg")    # Nastavi hodnotu tlacitka na 15 stupnu
 radioButton3.bind('<Button-1>',lambda event,arg=1:callback(15,0))                                                   # Tato lambda funkce umožnuje levym tlačítkem na myši aktivovat funkci
 radioButton3.place(x=292,y=250)                                                                                        
 
 #########################################################################################
-labelArm = tk.Label(root,background="Powder Blue", font = ('Arial' , 10),text="ARM\nDEGREES")   # Text Arm Degrees
+labelArm = tk.Label(root,background="#EFFEAC", font = ('Arial' , 10),text="ARM\nDEGREES")   # Text Arm Degrees
 labelArm.place(x=100,y=120)                                                                    
                     
-labelBase = tk.Label(root,background="Powder Blue", text="Base: ")
+labelBase = tk.Label(root,background="#EFFEAC", text="Base: ")
 labelBase.place(x=40, y=160)                                                                   
 textBox3 = Text(root,height=1,width=3,bd=2)                                                     # Textové pole na zobrazeni stupnu
 textBox3.place(x=120,y=160)                                                                     
 textBox3.insert(tk.INSERT,'90')                                                                 # Docasna hodnota
 
-labelShoulder = tk.Label(root, background="Powder Blue",text="Shoulder: ")
+labelShoulder = tk.Label(root, background="#EFFEAC",text="Shoulder: ")
 labelShoulder.place(x=40, y=190)                                                               
 textBox4 = Text(root,height=1,width=3,bd=2)                                                     # Textové pole na zobrazeni stupnu
 textBox4.place(x=120,y=190)                                                                    
 textBox4.insert(tk.INSERT,'165')                                                                # Docasna hodnota
 
 
-labelElbow = tk.Label(root, background="Powder Blue",text="Elbow: ")
+labelElbow = tk.Label(root, background="#EFFEAC",text="Elbow: ")
 labelElbow.place(x=40, y=220)                                                                  
 textBox5 = Text(root,height=1,width=3,bd=2)                                                     # Textové pole na zobrazeni stupnu
 textBox5.place(x=120,y=220)                                                                    
 textBox5.insert(tk.INSERT,'0')                                                                  # Docasna hodnota
 
 
-labelWrist = tk.Label(root,background="Powder Blue", text="Wrist: ")
+labelWrist = tk.Label(root,background="#EFFEAC", text="Wrist: ")
 labelWrist.place(x=40, y=250)                                                                     
 textBox6 = Text(root,height=1,width=3,bd=2)                                                     # Textové pole na zobrazeni stupnu
 textBox6.place(x=120,y=250)                                                                    
