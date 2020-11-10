@@ -2,7 +2,7 @@ from tkinter import *
 import tkinter as tk                                                        # import tkinter knihovny
 import serial                                                               # import Serial knihovny
 import random                                                               # pouzito na ziskani nahodnych hodnot pro funkci nahodne pozice ramena
-
+import sys, os
 
 
 
@@ -105,7 +105,9 @@ def callback(value,code):                       # Value predava hodnotu '5,10,15
                                                                     
 root = Tk()
 
-root.geometry("500x400")                                            # Velikost okna
+root.geometry("450x350")                                       # Velikost okna
+program_directory=sys.path[0]
+root.iconphoto(True, PhotoImage(file=os.path.join(program_directory, "logo.png")))  # Nastaveni loga                   
 root.config(background="#FEF1AB")                                   # Pozadi
 radioButtonVar = tk.IntVar()                                        # Urceno k tomu aby prepinace byly nevyplnene pri zapnuti programu
 holdsum=0                                                           # Uklada pocet stupnu aby nepresahl 0<x<180 pro pohyb doprava a doleva
