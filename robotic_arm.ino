@@ -102,6 +102,7 @@ void loop() {
     delay(50);                                  // Cas aby se serva vratily do klidove polohy
   }
 
+  
   //Nahodny pohyb
   if (dataCode == 4 ) {
     for (int i = 1; i < 6; i = i + 1) {         // provest 6 nahodnych pozic
