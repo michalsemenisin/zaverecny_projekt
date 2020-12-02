@@ -20,14 +20,14 @@ Samotný pohyb je složitý a je k tomu potřeba znalosti matematiky
 
 HARDWARE: 
           <ul> <li>*- ARDUINO UNO </li> 
-           *- BREADBOARD
-           *- ARDUINO SENSOR SHIELD V5
-           *- 6x SERVOMOTORY
-           *- STAVEBNICE RAMENE
-           *- JUMPING WIRES
-           *- SERVO EXTENDER KABELY
-           *- 6x POTENCIOMETR
-           *- EXTERNAL POWER SUPPLY </ul>
+           <li>*- BREADBOARD </li> 
+           <li>*- ARDUINO SENSOR SHIELD V5 </li> 
+           <li>*- 6x SERVOMOTORY </li> 
+           <li>*- STAVEBNICE RAMENE </li> 
+           <li>*- JUMPING WIRES </li> 
+           <li>*- SERVO EXTENDER KABELY </li> 
+           <li>*- 6x POTENCIOMETR </li> 
+           <li>*- EXTERNAL POWER SUPPLY </li> </ul>
 
 - **ZDROJE:**
 - https://www.hackster.io/dfilannino03/robotic-arm-plays-tic-tac-toe-7797b1 ----------- KALKULACE
