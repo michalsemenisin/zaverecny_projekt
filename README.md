@@ -19,7 +19,7 @@ Samotný pohyb je složitý a je k tomu potřeba znalosti matematiky
 7.
 
 HARDWARE: 
-          <ul> *- ARDUINO UNO 
+          <ul> <li>*- ARDUINO UNO </li> 
            *- BREADBOARD
            *- ARDUINO SENSOR SHIELD V5
            *- 6x SERVOMOTORY
@@ -27,7 +27,7 @@ HARDWARE:
            *- JUMPING WIRES
            *- SERVO EXTENDER KABELY
            *- 6x POTENCIOMETR
-           *- EXTERNAL POWER SUPPLY <ul>
+           *- EXTERNAL POWER SUPPLY </ul>
 
 - **ZDROJE:**
 - https://www.hackster.io/dfilannino03/robotic-arm-plays-tic-tac-toe-7797b1 ----------- KALKULACE
