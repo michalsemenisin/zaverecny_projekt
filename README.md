@@ -32,7 +32,7 @@ HARDWARE:
 
 
 
-ZDROJE:
+**ZDROJE:**
 https://www.hackster.io/dfilannino03/robotic-arm-plays-tic-tac-toe-7797b1 ----------- KALKULACE
 https://www.hackster.io/phpoc_man/arduino-control-arm-robot-via-web-379ef3 ---------- KALKULACE
 https://www.hackster.io/AhmedAzouz/pc-controlled-robotic-arm-841a41 ----------------- OVLADANI
