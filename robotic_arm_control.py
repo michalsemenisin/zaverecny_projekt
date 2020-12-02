@@ -6,7 +6,6 @@ import sys, os
 
 
 
-
 #                                  
 #                   Hodnoty znamenají:       -+1 = rameno vlevo/vpravo
 #                                            -+2 = rameno nahoru/dolu
