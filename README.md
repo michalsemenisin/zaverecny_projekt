@@ -7,6 +7,17 @@ Ovládání serv po jednom je nudné a je to složité ovládat, takže posílá
 Samotný pohyb je složitý a je k tomu potřeba znalosti matematiky
                
 
+<b>HARDWARE: </b> 
+          <ul> <li> ARDUINO UNO </li> 
+           <li> BREADBOARD </li> 
+           <li> ARDUINO SENSOR SHIELD V5 </li> 
+           <li> 6x SERVOMOTORY </li> 
+           <li> STAVEBNICE RAMENE </li> 
+           <li> JUMPING WIRES </li> 
+           <li> SERVO EXTENDER KABELY </li> 
+           <li> 6x POTENCIOMETR </li> 
+           <li> EXTERNAL POWER SUPPLY </li> </ul>
+
 
             PLÁN
 -----------------------------------------------------------------
@@ -18,16 +29,6 @@ Samotný pohyb je složitý a je k tomu potřeba znalosti matematiky
 6. RECORD AND PLAY -
 7.
 
-HARDWARE: 
-          <ul> <li>*- ARDUINO UNO </li> 
-           <li>*- BREADBOARD </li> 
-           <li>*- ARDUINO SENSOR SHIELD V5 </li> 
-           <li>*- 6x SERVOMOTORY </li> 
-           <li>*- STAVEBNICE RAMENE </li> 
-           <li>*- JUMPING WIRES </li> 
-           <li>*- SERVO EXTENDER KABELY </li> 
-           <li>*- 6x POTENCIOMETR </li> 
-           <li>*- EXTERNAL POWER SUPPLY </li> </ul>
 
 - **ZDROJE:**
 - https://www.hackster.io/dfilannino03/robotic-arm-plays-tic-tac-toe-7797b1 ----------- KALKULACE
