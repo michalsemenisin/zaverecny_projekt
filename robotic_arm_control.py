@@ -157,7 +157,7 @@ ArmResetButton.bind('<Button-1>',lambda event,arg=1:callback(0,3))          # Ta
 ArmResetButton.place(x=195, y=240)                                         
 
 ArmRandomButton = Button(root, bd=3,text="Random Move")                     # Tlacitko Random move
-ArmRandomButton.bind('<Button-1>',lambda event,arg=1:callback(0,5))         # Tato lambda funkce umožnuje levym tlačítkem na myši aktivovat funkci
+ArmRandomButton.bind('<Button-1>',lambda event,arg=1:callback(0,4))         # Tato lambda funkce umožnuje levym tlačítkem na myši aktivovat funkci
 ArmRandomButton.place(x=185, y=200)                                        
 
 textBox7 = Text(root,height=1,width=3,bd=2)                                 # Textové pole pro ON/OFF
