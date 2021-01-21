@@ -24,10 +24,6 @@ void setup() {
 
   Serial.begin(9600);           // Nastavi baudrate 9600 - pocet bitu za vterinu 
 
-  while (!Serial) {
-    ;                           // Cekani na seriovy port aby se pripojil
-  }
-
   Serial.setTimeout(5000);      // Nastavi timeout na seriovy port dostatecne dlouhy aby ziskala data z pythonu
 
 }
